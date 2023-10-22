@@ -1,0 +1,19 @@
+{
+  "studentdetails": [
+    {
+      "name": "chandru",
+      "password": "123345",
+      "id": 3
+    },
+    {
+      "name": "agalya",
+      "password": "24325",
+      "id": 4
+    },
+    {
+      "name": "lurdh",
+      "password": "13143",
+      "id": 5
+    }
+  ]
+}

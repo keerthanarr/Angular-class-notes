@@ -1,0 +1,32 @@
+<p>sample works!</p>
+{{name}}
+<input [disabled]="isVisible" type="text">
+<button (click)="onClick()">test</button>
+<input type="text" [(ngModel)] = "name">
+<div *ngIf="isVisible;  else block">
+  <p>Visible</p>
+</div>
+<ng-template  #block>
+  <p>elseblock</p>
+</ng-template>
+<div *ngFor="let data of sampledata">
+  {{data.name}}
+</div>
+<div [ngSwitch] = "color">
+  <div *ngSwitchCase="'red'"> the is red</div>
+  <div *ngSwitchDefault="color"> pick a color</div>
+</div>
+{{name | uppercase}}
+{{name | lowercase}}
+{{0.1243 | percent}}
+<p>{{ [1,2,3,4,5,6] | slice:3 }}</p>
+{{ 1234.56 | currency:'CAD' }}
+<p>{{ 3.14159265 | number: '3.1-2' }}</p>
+<p>{{ jsonval | json }}</p>
+<p>{{ date | date: 'd/M/y' }}</p>
+{{inputdata}}
+<button (click)="onclick()">event</button>
+<form [formGroup]="form">
+  <div class="mb-3">
+  <input type="text" formControlName="name" class="form-control"></div>
+</form>

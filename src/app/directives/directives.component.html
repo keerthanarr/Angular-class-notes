@@ -1,0 +1,24 @@
+<h3>structral directive</h3>
+<h5>ngIf</h5>
+<div *ngIf="isValue; else elseblock">
+<p>This block is visible</p>
+</div>
+<ng-template #elseblock>
+<p>This is else block</p>
+</ng-template>
+
+
+<h5>ngFor</h5>
+<div *ngFor="let data of students">
+{{data.name}}
+{{data.gender}}
+</div>
+
+<h5>ngSwitch</h5>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'green'">
+    The color is green
+  </div>
+  <div *ngSwitchCase="'red'">The color is red</div>
+  <div *ngSwitchDefault>pick a color</div>
+</div>

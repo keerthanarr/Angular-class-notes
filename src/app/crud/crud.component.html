@@ -1,0 +1,29 @@
+
+
+<form [formGroup]="login">
+  <div class="mb-3">
+    <input type="text" placeholder="Enter username" formControlName="name"  class="form-control">
+  </div>
+<div class="mb-3">
+   <input type="password" placeholder="Enter password" formControlName="password"  class="form-control">
+</div>
+<div>
+  <button (click)="onLogin()" class="btn btn-primary">Login</button>
+  <button (click)="update()" class="btn btn-primary">Update</button>
+
+</div>
+</form>
+
+<table>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+  </tr>
+  <tr *ngFor="let data of studentdetails">
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+    <td><button (click)="edit(data.id)">edit</button></td>
+    <td><button (click)="delete(data.id)">delete</button></td>
+  </tr>
+  </table>
+

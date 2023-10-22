@@ -1,0 +1,15 @@
+<h1>Data Binding</h1>
+<h3>Oneway Binding</h3>
+<h6>ts-html</h6>
+<p>1.Interpolation</p>
+{{name}}
+<p>2.properybinding</p>
+<input type="text" [disabled]=" isVisible">
+
+<h6>html-ts</h6>
+<p>1.Eventbinding</p>
+<button (click)="onClick()">Onclick</button>
+
+<h3>Twowaybinding</h3>
+<input type="text" [(ngModel)]="name">
+{{name}}
